@@ -1,0 +1,200 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;900&display=swap');
+
+body {
+  font-family: 'Noto Sans JP';
+  font-weight: 400;
+  color: #333333;
+  background-color: #EDEDED;
+  margin: 0;
+}
+
+h1, h2, h3, p span {
+  color: #480ca8;
+}
+
+a {
+  color:#480ca8;
+  text-decoration: none;
+}
+
+li {
+  font-size: 0.9em;
+}
+
+header {
+  background-image: url('../img/computer-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header .foreground {
+  background-color: rgba(72, 12, 168, 0.7);
+  padding: 20px;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-container h1 {
+  margin: 0;
+  color: rgb(200, 255, 0);
+}
+
+/*
+.top-container nav {
+  width: 100%;
+}
+
+.top-container nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+
+.top-container nav ul li {
+  list-style-type: none;
+}
+
+.top-container nav ul li a {
+  color: #FFF;
+}
+*/
+
+.top-container nav {
+  height: 100vh;
+  width: 80%;
+  background-color: white;
+  position: fixed;
+  left: -80%;
+  top: 0;
+  font-size: 1.3em;
+  box-shadow: rgba(30, 30, 40, 0.2) 1px 0px 3px;
+  transition: 1s left ease;
+}
+
+.show-nav {
+  left: 0 !important;
+}
+
+.top-container nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-inline-start: 0px;
+}
+
+.top-container nav ul li {
+  list-style-type: none;
+  padding: 5px 20px;
+}
+
+.top-container nav ul li a {
+  color: #333;
+}
+
+.hamburger ion-icon {
+  font-size: 32px;
+  color: white;
+  border: 1px solid white;
+}
+
+header h2 {
+  font-size: 2.6em;
+  text-align: center;
+  color: white;
+  text-shadow: rgba(50, 50, 50, 0.3) 0px 5px 5px;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.landing-section {
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.landing-section h2 {
+  font-size: 2.6em;
+}
+
+.landing-section p {
+  font-size: 1.2em;
+  font-weight: 500;
+  max-width: 800px;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+}
+
+footer p {
+  margin: 0;
+  padding: 80px;
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.medium-bg {
+  background-color: rgb(210, 210, 210, 1);
+}
+
+/* Profile Page */
+
+.profile-section {
+  max-width: 500px;
+  padding: 0px 50px 50px 50px;
+  border: 1px solid #BBB;
+  border-radius: 5px;
+  margin: 20px auto;
+  background-color: #FFF;
+  text-align: center;
+}
+
+.profile-section img {
+  position: relative;
+  top: -30px;
+  box-shadow: 0px -2px 3px rgba(30, 30, 40, 0.2);
+  border-radius: 50%;
+}
+
+.profile-section ul {
+  text-align: left;
+}
+
+@media screen and (min-width: 420px) {
+  header h2 {
+    font-size: 4em;
+  }
+  .hamburger {
+    display: none;
+  }
+  .landing-section {
+    padding: 10px 60px;
+    min-height: 50vh;
+  }
+  .top-container nav {
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    position: static;
+    font-size: 1em;
+    box-shadow: none;
+  }
+  .top-container nav ul {
+    flex-direction: row;
+  }
+  .top-container nav ul li {
+    padding: 0;
+  }
+  .top-container nav ul li a {
+    color: white;
+  }
+} 
